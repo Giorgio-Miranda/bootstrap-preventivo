@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoolFactory-Richiesta-Preventivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md  text-white bg-dark" data-bs-theme="bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class=" container title text-white bg-dark ">BoolFactory</span>
+                </a>
+                <!-- BOTTONE MENU NAVBAR -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- ELEMENTI BOTTONE MENU -->
+                <div class="collapse navbar-collapse container " id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50 bg-dark" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 bg-dark" href="#">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 bg-dark" href="#">Contatti</a>
+                        </li>
+
+
+
+
+
+
+                </div>
+        </nav>
+
+
+    </header>
+
+
+    <main class="py-5">
+        <!--  TITOLO & Sottotitolo RICHIESTA PREVENTIVO -->
+        <section class="">
+            <div class=" container py-5">
+                <h1>Richiesta preventivo</h1>
+
+                <h6>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</h6>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <!-- SEZIONE FORM -->
+                <section class="col-12 col-lg-4 ">
+                    <div class="mb-3">
+                        <label class="form-label" for="Nome">Nome </label> <input class="form-control" type="text"
+                            id="Nome">
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label class="form-label" for="Cognome">Cognome</label> <input class="form-control" type="text"
+                            id="Cognome">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label" for="Email">Email</label> <input class="form-control" type="Email"
+                            id="Email">
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label class="form-label" for="type-of-work">Tipo di lavoro</label>
+                        <Select class="form-select"
+                        aria-label="Default-select-example" id="type-of-work">
+                            <option value="backed Development">Backed Development
+                            </option>
+                            
+                            <option value="frontend Development">Frontend Development</option>
+                            <option value="project Analysis">Project Analysis </option>
+                        </Select>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+
+
+
+                </section>
+
+
+                <!-- SEZIONE CARD -->
+                <section class="col-12 col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                    doloremque natus vero, sint soluta ea perferendis harum atque. Sapiente nemo eum, harum est autem
+                    totam voluptate architecto rerum praesentium dolores?</section>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- DIRITTI RISERVATI -->
+    <footer class="bg-dark text-white  mw-100 pt-relative">
+        <div class="container text-center text-md-left">
+
+            <div class=" col-lg-3 col-xl-3 mx-auto mt-3 ">
+                <h7 class="text-uppercase" style="font-size: 12px"> &copy;2024 - Tutti i diritti riservati</h7>
+            </div>
+
+        </div>
+
+
+    </footer>
+</body>
+
+
+
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</html>
