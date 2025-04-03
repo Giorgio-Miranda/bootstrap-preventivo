@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="style.css">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -11,21 +10,18 @@
 </head>
 
 <body>
+    <!-- NAVBAR CON BOTTONE -->
     <header>
-        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-md  text-white bg-dark" data-bs-theme="bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <span class=" container title text-white bg-dark ">BoolFactory</span>
                 </a>
-                <!-- BOTTONE MENU NAVBAR -->
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
-                <!-- ELEMENTI BOTTONE MENU -->
                 <div class="collapse navbar-collapse container " id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -37,108 +33,139 @@
                         <li class="nav-item">
                             <a class="nav-link text-white-50 bg-dark" href="#">Contatti</a>
                         </li>
-
-
-
-
-
-
                 </div>
         </nav>
-
-
     </header>
+    <!--  FINE NAVBAR CON BOTTONE -->
 
 
+    <!-- TITOLO + SOTTOTITOLO -->
     <main class="py-5">
-        <!--  TITOLO & Sottotitolo RICHIESTA PREVENTIVO -->
-        <section class="">
-            <div class=" container py-5">
-                <h1>Richiesta preventivo</h1>
-
-                <h6>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</h6>
-            </div>
-        </section>
-
         <div class="container">
             <div class="row">
-                <!-- SEZIONE FORM -->
-                <section class="col-12 col-lg-4 ">
-                    <div class="mb-3">
-                        <label class="form-label" for="Nome">Nome </label> <input class="form-control" type="text"
-                            id="Nome">
-                    </div>
 
+                <section class="col-12 col-lg-6">
+                    <form id="total-form">
+                        <div class="mb-3">
+                            <section class="">
+                                <div class=" container py-6">
+                                    <h1>Richiesta preventivo</h1>
+                                    <h6>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.
+                                    </h6>
+                                </div>
+                                <!-- FINE TITOLO + SOTTOTITOLO -->
 
+                                <!-- SEZIONE FORM -->
+                            </section>
 
-                    <div class="mb-3">
-                        <label class="form-label" for="Cognome">Cognome</label> <input class="form-control" type="text"
-                            id="Cognome">
-                    </div>
+                            <label class="form-label" for="Nome">Nome </label>
+                            <input class="form-control" type="text" id="Nome">
+                        </div>
 
+                        <div class="mb-3">
+                            <label class="form-label" for="Cognome">Cognome</label> <input class="form-control"
+                                type="text" id="Cognome">
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label" for="Email">Email</label> <input class="form-control" type="Email"
-                            id="Email">
-                    </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Email">Email</label> <input class="form-control" type="Email"
+                                id="Email">
+                        </div>
 
+                        <div class="mb-3">
+                            <label class="form-label" for="typework">Tipo di lavoro</label>
+                            <select class="form-select" aria-label="Default-select-example" id="typework">
+                                <option class="message">Seleziona il tipo di lavoro</option>
+                                <option value="backed Development">Backed Development - 20.50€/l’ora
+                                </option>
+                                <option value="frontend Development">Frontend Development- 15.30€/l’ora</option>
+                                <option value="project Analysis">Project Analysis- 33.60€/l’ora </option>
+                            </select>
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="text-area" class="form-label">Descrivici il progetto che vuoi farci
+                                sviluppare!</label>
+                            <textarea class="form-control" id="text-area" rows="3"></textarea>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label" for="type-of-work">Tipo di lavoro</label>
-                        <Select class="form-select"
-                        aria-label="Default-select-example" id="type-of-work">
-                            <option value="backed Development">Backed Development
-                            </option>
-                            
-                            <option value="frontend Development">Frontend Development</option>
-                            <option value="project Analysis">Project Analysis </option>
-                        </Select>
+                        <div class="mb-3">
+                            <label class="form-label" for="promozione">Inserisci codice promozionale (opzionale)</label>
+                            <input class="form-control" type="text" id="promozione">
+                        </div>
 
-                    </div>
+                        <input type="checkbox" id="Privacybox" name="privacy" value="privacy">
+                        <label for="privacy">Accetto la privacy policy</label>
 
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
+                        <!-- FINE SEZIONE FORM -->
 
+                        <!-- BOTTONE CALCOLA PREVENTIVO -->
+                        <div class="container">
+                            <div class="row">
+                                <section class="col-lg-6">
+                                    <div class="py-4">
+                                        <button type="submit" class="btn btn-primary">Calcola Preventivo</button>
+                                    </div>
+                                </section>
+                                <!-- FINE BOTTONE CALCOLA PREVENTIVO -->
 
-
-
+                                <!-- SEZIONE RISULTATO FINALE -->
+                                <section id="result" class="col-lg-6 py-3">
+                                    <div></div>
+                                </section>
+                            </div>
+                        </div>
+                    </form>
                 </section>
 
 
-                <!-- SEZIONE CARD (IMG+DATI) -->
-                <section class="col-12 col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                    doloremque natus vero, sint soluta ea perferendis harum atque. Sapiente nemo eum, harum est autem
-                    totam voluptate architecto rerum praesentium dolores?</section>
+                <!-- SEZONE CARD -->
+                <section class="col-12 col-lg-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.salvatorepumo.it/wp-content/uploads/2020/03/preventivo-logo-professionale.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">I nostri contatti</h5>
+
+                            <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="mailto">help@boolfactory.test</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="Tel">+1122334455</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="">Help desk</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- FINE SEZONE CARD -->
             </div>
         </div>
-
     </main>
 
-
-
-    <!-- DIRITTI RISERVATI -->
+    <!-- FOOTER DIRITTI RISERVATI -->
     <footer class="bg-dark text-white  mw-100 pt-relative">
         <div class="container text-center text-md-left">
-
             <div class=" col-lg-3 col-xl-3 mx-auto mt-3 ">
                 <h7 class="text-uppercase" style="font-size: 12px"> &copy;2024 - Tutti i diritti riservati</h7>
             </div>
-
         </div>
-
-
     </footer>
+    <!-- FOOTER DIRITTI RISERVATI -->
+
+    
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
-
-
-
-<script src="./script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
 
 </html>
